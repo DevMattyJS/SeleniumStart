@@ -34,7 +34,7 @@ public class FindingELements {
 		
 		// get the text of each link and print it into console
 		for (WebElement link : footerLinks) {
-			String linkText = link.getText();
+			String linkText = link.getText();		// getText() -> returns an inner text of HTML element
 			System.out.println(linkText);
 		}
 		
