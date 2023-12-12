@@ -1,6 +1,5 @@
 package PageNavigation;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -16,7 +15,9 @@ public class PageNavigation {
 		String amazonUrl = "https://www.amazon.com";
 		
 		driver.get(baseUrl);
-		driver.get(amazonUrl);
+		
+		// navigate()to() -> functionally same as .get() (it calls the get() method behind the scenes)			  
+		driver.navigate().to(amazonUrl);
 		driver.navigate().back();		// navigate one page backwards
 		driver.navigate().forward();	// navigate one page forward
 		driver.navigate().refresh();	// refresh the actual page
